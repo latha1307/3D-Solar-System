@@ -26,7 +26,7 @@ let neptune_revolution_speed = 0.4
 
 
 function createMaterialArray() {
-  const skyboxImagepaths = ['../img/skybox/space_ft.png', '../img/skybox/space_bk.png', '../img/skybox/space_up.png', '../img/skybox/space_dn.png', '../img/skybox/space_rt.png', '../img/skybox/space_lf.png']
+  const skyboxImagepaths = ['img/skybox/space_ft.png', 'img/skybox/space_bk.png', 'img/skybox/space_up.png', 'img/skybox/space_dn.png', 'img/skybox/space_rt.png', 'img/skybox/space_lf.png']
   const materialArray = skyboxImagepaths.map((image) => {
     let texture = new THREE.TextureLoader().load(image);
     return new THREE.MeshBasicMaterial({ map: texture, side: THREE.BackSide });
@@ -79,15 +79,15 @@ function init() {
   );
 
   setSkyBox();
-  planet_earth = loadPlanetTexture("../img/earth_hd.jpg", 4, 100, 100, 'standard');
-  planet_sun = loadPlanetTexture("../img/sun_hd.jpg", 20, 100, 100, 'basic');
-  planet_mercury = loadPlanetTexture("../img/mercury_hd.jpg", 2, 100, 100, 'standard');
-  planet_venus = loadPlanetTexture("../img/venus_hd.jpg", 3, 100, 100, 'standard');
-  planet_mars = loadPlanetTexture("../img/mars_hd.jpg", 3.5, 100, 100, 'standard');
-  planet_jupiter = loadPlanetTexture("../img/jupiter_hd.jpg", 10, 100, 100, 'standard');
-  planet_saturn = loadPlanetTexture("../img/saturn_hd.jpg", 8, 100, 100, 'standard');
-  planet_uranus = loadPlanetTexture("../img/uranus_hd.jpg", 6, 100, 100, 'standard');
-  planet_neptune = loadPlanetTexture("../img/neptune_hd.jpg", 5, 100, 100, 'standard');
+  planet_earth = loadPlanetTexture("img/earth_hd.jpg", 4, 100, 100, 'standard');
+  planet_sun = loadPlanetTexture("img/sun_hd.jpg", 20, 100, 100, 'basic');
+  planet_mercury = loadPlanetTexture("img/mercury_hd.jpg", 2, 100, 100, 'standard');
+  planet_venus = loadPlanetTexture("img/venus_hd.jpg", 3, 100, 100, 'standard');
+  planet_mars = loadPlanetTexture("img/mars_hd.jpg", 3.5, 100, 100, 'standard');
+  planet_jupiter = loadPlanetTexture("img/jupiter_hd.jpg", 10, 100, 100, 'standard');
+  planet_saturn = loadPlanetTexture("img/saturn_hd.jpg", 8, 100, 100, 'standard');
+  planet_uranus = loadPlanetTexture("img/uranus_hd.jpg", 6, 100, 100, 'standard');
+  planet_neptune = loadPlanetTexture("img/neptune_hd.jpg", 5, 100, 100, 'standard');
 
   // planet_earth_label = new THREE.TextGeometry( text, parameters );
   // planet_mercury_label = loadPlanetTexture("../img/mercury_hd.jpg", 2, 100, 100);
